@@ -1,4 +1,4 @@
-  <html lang="en-gb" class="no-js" >
+  <html lang="en-gb" class="no-js" xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org" >
 
 <head>
 <style type="text/css">
@@ -122,4 +122,668 @@
   
 			
 </head>
+
+<body class="" data-pin-hover="true">
+
+
+      <div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="https://staticxx.facebook.com/connect/xd_arbiter/r/lY4eZXm_YWu.js?version=42#channel=f1c3f081627&amp;origin=https%3A%2F%2Fwww.wedmegood.com" style="border: none;"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+     
+    <script>
+    /*<![CDATA[*/
+      window.fbAsyncInit = function() {
+          FB.init({
+            appId      : '400046146843075',
+            xfbml      : true,
+            version    : 'v2.5'
+          });
+        };
+        (function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.5&appId=400046146843075";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));
+        /*]]>*/
+      </script>
+      
+            <script src="https://maps.googleapis.com/maps/api/js?signed_in=false&amp;libraries=places" async="" defer=""></script>
+
+  <!-- Start Visual Website Optimizer Asynchronous Code -->
+  <script type="text/javascript">
+  /*<![CDATA[*/
+  var _vwo_code = (function () {
+  var account_id=290612,
+  settings_tolerance=2000,
+  library_tolerance=2500,
+  use_existing_jquery=false,
+  /* DO NOT EDIT BELOW THIS LINE */
+  f=false,d=document;return{use_existing_jquery:function(){return use_existing_jquery;},library_tolerance:function(){return library_tolerance;},finish:function(){if(!f){f=true;var a=d.getElementById('_vis_opt_path_hides');if(a)a.parentNode.removeChild(a);}},finished:function(){return f;},load:function(a){var b=d.createElement('script');b.src=a;b.type='text/javascript';b.innerText;b.onerror=function(){_vwo_code.finish();};d.getElementsByTagName('head')[0].appendChild(b);},init:function(){settings_timer=setTimeout('_vwo_code.finish()',settings_tolerance);var a=d.createElement('style'),b='body{opacity:0 !important;filter:alpha(opacity=0) !important;background:none !important;}',h=d.getElementsByTagName('head')[0];a.setAttribute('id','_vis_opt_path_hides');a.setAttribute('type','text/css');if(a.styleSheet)a.styleSheet.cssText=b;else a.appendChild(d.createTextNode(b));h.appendChild(a);this.load('//dev.visualwebsiteoptimizer.com/j.php?a='+account_id+'&u='+encodeURIComponent(d.URL)+'&r='+Math.random());return settings_timer;}};}());_vwo_settings_timer=_vwo_code.init();
+  /*]]>*/
+  </script>
+  
+    <!-- End Visual Website Optimizer Asynchronous Code -->
+
+          <!--Navigation Panel -->
+          <div data-ng-app="navApp" data-ng-controller="navController" id="navApp" class="ng-scope"> 101 , 709
+    <!--
+    <div id="app-fixed-footer-m" class="visible-xs-custom">
+    <i class="fa fa-times" aria-hidden="true" ng-click="closeFooter()"></i>
+    <img ng-src="{[S3_URL]}images/downloadApp.svg" id="app-fixed-logo-new">
+    <div id="app-fixed-text-m">
+    <p>Get the WedMeGood App</p>
+    <p id="app-fixed-subtext-m" class="iphone-show">Available on the App Store</p>
+    <p id="app-fixed-subtext-m" class="android-show hide">Available on the Play Store</p>
+  </div>
+  <button onclick="appBtn()" id="app-fixed-button-new">GET</button>
+  </div>
+  -->
+ 
+   <header id="header" class="wmg-navigation-bar">
+    <div id="sov" class="search-overlay" ng-click="overlayClick()" style="display:none"></div>
+    <div class="new-header" ng-show="!isMobile">
+      <div class="light-upper">
+        <!-- <a href="/write-a-review" class="upper-header-anchor">
+        <img src="https://images.wedmegood.com/images/write-review.png" height="13.2px"/>
+        Write a Review
+      </a> -->
+      <a onclick="openModal()" class="upper-header-anchor">
+        <img src="https://images.wedmegood.com/images/icons/download-app-icon.png" height="13.2px" />
+        Download App
+      </a>
+    </div>
+    <div class="dark-lower">
+      <a href="/" class="logo">
+        <img src="https://images.wedmegood.com/images/WMG-logo.svg" alt="Wed me Good Menu" />
+      </a>
+      <div class="menu-and-search">
+        <div class="nav-menu" id="nav-menu-header">
+          <div style="margin-left: 24px;" class="nav-cat" id="v-nav-cat">
+            <a ng-href="/vendors/" ng-click="newURL()" href="/vendors/">
+              <span>Vendors</span>
+            </a>
+            <div class="v-cat-view row t-70 invisible">
+              <ul class="col-md-6">
+                <!-- ngRepeat: value in firstCat --><li ng-repeat="value in firstCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug,value.category_alias)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/wedding-venues" href="/vendors/all/wedding-venues">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 574px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 574px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 574px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 574px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Wedding Venues</span>
+                    <!-- ngIf: value.id == '20' -->
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in firstCat --><li ng-repeat="value in firstCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug,value.category_alias)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/wedding-photographers" href="/vendors/all/wedding-photographers">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 544px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 544px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 544px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 544px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Wedding Photographers</span>
+                    <!-- ngIf: value.id == '20' -->
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in firstCat --><li ng-repeat="value in firstCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug,value.category_alias)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/bridal-makeup" href="/vendors/all/bridal-makeup">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 514px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 514px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 514px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 514px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Bridal Makeup</span>
+                    <!-- ngIf: value.id == '20' -->
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in firstCat --><li ng-repeat="value in firstCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug,value.category_alias)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/family-makeup" href="/vendors/all/family-makeup">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 484px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 484px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 484px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 484px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Family Makeup</span>
+                    <!-- ngIf: value.id == '20' --><div ng-if="value.id == '20'" class="ng-scope">
+                      <img style="position: absolute;width: auto;height: auto;bottom: 10px;left: 156px;" ng-src="https://images.wedmegood.com/images/wmg-service-badge.png" src="https://images.wedmegood.com/images/wmg-service-badge.png" />
+                    </div><!-- end ngIf: value.id == '20' -->
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in firstCat --><li ng-repeat="value in firstCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug,value.category_alias)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/bridal-wear" href="/vendors/all/bridal-wear">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 454px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 454px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 454px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 454px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Bridal Wear</span>
+                    <!-- ngIf: value.id == '20' -->
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in firstCat --><li ng-repeat="value in firstCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug,value.category_alias)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/groom-wear" href="/vendors/all/groom-wear">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 424px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 424px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 424px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 424px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Groom Wear</span>
+                    <!-- ngIf: value.id == '20' -->
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in firstCat --><li ng-repeat="value in firstCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug,value.category_alias)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/wedding-decorators" href="/vendors/all/wedding-decorators">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 394px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 394px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 394px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 394px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Wedding Decorators</span>
+                    <!-- ngIf: value.id == '20' -->
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in firstCat --><li ng-repeat="value in firstCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug,value.category_alias)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/planners" href="/vendors/all/planners">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 364px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 364px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 364px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 364px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Wedding Planner </span>
+                    <!-- ngIf: value.id == '20' -->
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in firstCat --><li ng-repeat="value in firstCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug,value.category_alias)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/wedding-cards" href="/vendors/all/wedding-cards">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 334px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 334px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 334px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 334px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Wedding Cards</span>
+                    <!-- ngIf: value.id == '20' -->
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in firstCat --><li ng-repeat="value in firstCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug,value.category_alias)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/wedding-videography" href="/vendors/all/wedding-videography">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 304px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 304px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 304px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 304px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Wedding Videography</span>
+                    <!-- ngIf: value.id == '20' -->
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in firstCat -->
+              </ul>
+              <ul class="col-md-6">
+                <!-- ngRepeat: value in secCat --><li ng-repeat="value in secCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/mehendi-artists" href="/vendors/all/mehendi-artists">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 274px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 274px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 274px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 274px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Bridal Mehendi</span>
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in secCat --><li ng-repeat="value in secCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/wedding-cakes" href="/vendors/all/wedding-cakes">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 244px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 244px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 244px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 244px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Wedding Cakes</span>
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in secCat --><li ng-repeat="value in secCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/wedding-jewellery" href="/vendors/all/wedding-jewellery">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 214px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 214px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 214px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 214px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Wedding Jewellery</span>
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in secCat --><li ng-repeat="value in secCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/wedding-catering" href="/vendors/all/wedding-catering">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 184px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 184px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 184px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 184px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Wedding Catering</span>
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in secCat --><li ng-repeat="value in secCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/trousseau-packers" href="/vendors/all/trousseau-packers">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 154px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 154px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 154px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 154px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Trousseau Packers</span>
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in secCat --><li ng-repeat="value in secCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/djs" href="/vendors/all/djs">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 124px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 124px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 124px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 124px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">DJ</span>
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in secCat --><li ng-repeat="value in secCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/sangeet-choreographers" href="/vendors/all/sangeet-choreographers">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 94px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 94px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 94px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 94px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Sangeet Choreographers</span>
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in secCat --><li ng-repeat="value in secCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/wedding-accessories" href="/vendors/all/wedding-accessories">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 64px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 64px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 64px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 64px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Wedding Accessories</span>
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in secCat --><li ng-repeat="value in secCat" class="v-cat-li ng-scope" ng-click="update(value.category_slug)">
+                  <!-- ngIf: value.type == 1 --><a ng-if="value.type == 1" class="v-cat-a ng-scope" ng-href="/vendors/all/wedding-favors" href="/vendors/all/wedding-favors">
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 0 34px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 0px 34px;" class="black-cat"></div>
+                    <div ng-style="{'background':'url(https://images.wedmegood.com/images/sprite-image.png?v=1.0.4) 30px 34px'}" style="height: 30px; width: 27px; display: inline-block; background: url(&quot;https://images.wedmegood.com/images/sprite-image.png?v=1.0.4&quot;) 30px 34px;" class="pink-cat gayab"></div>
+                    <span class="ng-binding">Wedding Favors</span>
+                  </a><!-- end ngIf: value.type == 1 -->
+                </li><!-- end ngRepeat: value in secCat -->
+              </ul>
+              <div class="clearfix"></div>
+              <div class="cat-ayav">
+                <p>Are you a Vendor?</p>
+                <p onclick="showForm('#vendorregister_panel');closeVcat()">Register Now</p>
+              </div>
+            </div>
+          </div>
+          <div class="nav-cat">
+            <a ng-href="/photos" ng-click="newGalleryUrl()" href="/photos">
+              <span>Photos</span>
+            </a>
+          </div>
+          <div class="nav-cat">
+            <a href="/real_wedding">
+              <span>Real Weddings<span></span></span></a>
+              </div>
+              <div class="nav-cat">
+                <a href="/blog">
+                  <span>Blog</span>
+                </a>
+              </div>
+            </div>
+            <div class="nav-search" id="nav-search">
+              <div class="nav-search-bar" id="nav-search-bar">
+                <input type="text" class="nav-search-bar-input searchBox ng-pristine ng-untouched ng-valid ng-empty" name="srch-term" id="srch-term" data-ng-model="searchValue.inputvalue" placeholder="Search: Vendors, Photos, Articles" />
+                <div class="global-search-results">
+                  <!-- ngRepeat: actor in searchValue.data -->
+                </div>
+              </div>
+              <div class="nav-search-box" ng-click="onSearchClick()">
+                <img src="https://images.wedmegood.com/images/header-search.png" height="13.2px" />
+              </div>
+            </div>
+          </div>
+          <!-- ngIf: !navProfile.logged_in && !navProfile.vendor_logged_in --><div data-ng-if="!navProfile.logged_in &amp;&amp; !navProfile.vendor_logged_in" class="login-area ng-scope">
+            <div class="nav-new-login profile-avatar">
+              <div class="nav-login-text" onclick="openLoginModal()">
+                Login
+              </div>
+            </div>
+          </div><!-- end ngIf: !navProfile.logged_in && !navProfile.vendor_logged_in -->
+          <!-- ngIf: navProfile.logged_in && !navProfile.vendor_logged_in -->
+          <!-- ngIf: navProfile.vendor_logged_in -->
+        </div>
+      </div>
+
+      <!--Header Ends -->
+
+      <div class="container" id="header-container">
+        <div class="wmg-container header-box">
+          <div class="row-fluid">
+            <ul id="nav-mobile" class="side-nav sidebar-new-nav navbar-collapse collapse" style="display: flex;flex-direction: column;">
+              <!-- ngIf: navProfile.logged_in -->
+              <li class="homepage-link"><a ng-click="goToHomepage()"><i class="fa fa-home" aria-hidden="true"></i><span style=" margin-left: 10px;">Home</span></a></li>
+              <li><a ng-href="/vendors" href="/vendors"><img ng-src="https://images.wedmegood.com/images/vendors.svg" src="https://images.wedmegood.com/images/vendors.svg" /><span>Vendors</span></a></li>
+              <li><a href="/photos"><img ng-src="https://images.wedmegood.com/images/photos.svg" src="https://images.wedmegood.com/images/photos.svg" /><span>Photos</span></a></li>
+              <li><a href="/real_wedding"><img ng-src="https://images.wedmegood.com/images/realwedding.svg" src="https://images.wedmegood.com/images/realwedding.svg" /><span>Real Weddings</span></a></li>
+              <li><a href="/blog"><img ng-src="https://images.wedmegood.com/images/blog.svg" src="https://images.wedmegood.com/images/blog.svg" /><span>Blog</span></a></li>
+              <!-- ngIf: navProfile.logged_in -->
+              <!-- ngIf: navProfile.vendor_logged_in -->
+            </ul>
+            <!-- Mobile Menu -->
+
+            <ul class="nav nav-pills mobile-nav visible-xs-block">
+              <li style="padding:0">
+                <button id="nav-mobile-icon" type="button" class="navbar-toggle collapsed navbar-but" data-toggle="collapse" data-target="#nav-mobile" aria-expanded="false" aria-controls="navbar">
+                  <i class="fa fa-bars" aria-hidden="true"></i>
+                </button>
+              </li>
+            </ul>
+              <script type="text/ng-template" id="LoggedMobDropDown.html">
+                <li style="position:relative;padding:5px;padding-left:10px"><a href="/dashboard/no-shortlists" class="f-w700">My Shortlist<i class="fa fa-chevron-right" style="right: 6px;top: 40%;"></i></a></li>
+                <li style="position:relative;padding:5px;padding-left:10px"><a href="/dashboard/no-loves" class="f-w700">My Loves<i class="fa fa-chevron-right" style="right: 6px;top: 40%;"></i></a></li>
+                <li style="position:relative;padding:5px;padding-left:10px"><a href="/dashboard/minbox" class="f-w700">Inbox<i class="fa fa-chevron-right" style="right: 6px;top: 40%;"></i></a></li>
+                <li style="position:relative;padding:5px;padding-left:10px"><a href="/dashboard/user/booking" class="f-w700">Bookings<i class="fa fa-chevron-right" style="right: 6px;top: 40%;"></i></a></li>
+                <li style="position:relative;padding:5px;padding-left:10px"><a ng-href="{[settingsUrl]}" class="f-w700">Settings<i class="fa fa-chevron-right" style="right: 6px;top: 40%;"></i></a></li>
+                <li style="position:relative;padding:5px;padding-left:10px">
+                  <a data-ng-click="logOut()" class="f-w700">Logout<i class="fa fa-chevron-right" style="right: 6px;top: 40%;"></i></a></li>
+                </script>
+                <script type="text/ng-template" id="LoggedVMobDropDown.html">
+                  <li style="position:relative;padding:5px;padding-left:10px"><a href="/vendor-mobile" class="f-w700">Dashboard<i class="fa fa-chevron-right" style="right: 6px;top: 40%;"></i></a></li>
+                  <li style="position:relative;padding:5px;padding-left:10px">
+                    <a data-ng-click="logoutVendor()" class="f-w700">Logout<i class="fa fa-chevron-right" style="right: 6px;top: 40%;"></i></a></li>
+                  </script>
+                  <script type="text/ng-template" id="NotLoggedMob.html">
+                    /*<![CDATA[*/
+                    <li ng-if="!navProfile.logged_in && !navProfile.vendor_logged_in" id="mobile-login-li" class="mobile-login-li"><a href="#" onclick="openLoginModal()"><img ng-src="{[S3_URL]}images/login.svg" /></a></li>
+                  /*]]>*/
+                  </script>
+                  <script type="text/ng-template" id="LoggedUserMob.html">
+                    <div class="nav-pro-image collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="navbar"> <i class="fa fa-user"></i></div>
+                  </script>
+                  <script type="text/ng-template" id="LoggedVendorMob.html">
+                    <div class="nav-pro-image collapsed" data-toggle="collapse" aria-expanded="false" aria-controls="navbar"> <i class="fa fa-user"></i></div>
+                  </script>
+                  <!-- Mobile Menu Ends -->
+
+                  <!-- Modal download view -->
+                  <div id="downloadModal" class="modal">
+                    <div class="modal-dialog">
+                      <div class="modal-content modal-size">
+                        <div class="modal-body" style="padding: 0; background-color: #ffebe8;">
+                          <div class="row">
+                            <div class="col-md-7" style="padding: 70px 0 50px 50px;">
+                              <div class="title">
+                                Get WedMeGood on your smartphone
+                              </div>
+                              <div class="sub-title">
+                                Explore wedding ideas | Get wedding checklist | Shortlist Vendors
+                              </div>
+                              <div class="full-sms-form">
+                                <div class="subsub-title">
+                                  You will receive an SMS with a link to download the App.
+                                </div>
+                                <div class="mob-form">
+                                  <form name="sendAppSms" class="ng-pristine ng-valid ng-valid-minlength ng-valid-maxlength">
+                                    <div>
+                                      <input type="number" placeholder="Enter mobile number" class="sms-val ng-pristine ng-untouched ng-valid ng-empty ng-valid-minlength ng-valid-maxlength" name="number" ng-model="mobNum" ng-minlength="10" ng-maxlength="10" />
+                                      <div ng-show="sendAppSms.number.$invalid" class="err-msg ng-hide" style="color: red; position: absolute; font-size: 12px">
+                                        Please enter a valid 10 digit number
+                                      </div>
+                                      <!-- <small class="success-msg" style="color: green; display: none; position: absolute">
+                                      SMS sent successfully
+                                    </small> -->
+                                    <small class="err-msg" style="color: red; display: none; position: absolute">
+                                      An error occurred. Please try again.
+                                    </small>
+                                  </div>
+                                  <div class="row btn-icons">
+                                    <div class="col-md-6" style="text-align: left">
+                                      <span class="oval-btn1 pointer" ng-click="DownloadGA('Download_app','site_header','send_download_link'); sendSMS()">Send me the App</span>
+                                      <div class="app-icons">
+                                        <img src="https://image.wedmegood.com/images/apple-icon.png" />
+                                        <img src="https://image.wedmegood.com/images/android-icon.png" />
+                                      </div>
+                                    </div>
+                                  </div>
+                                </form>
+                              </div>
+                            </div>
+                            <div class="success-msg subsub-title" style="color: green; display: none;">
+                              <h3>Message sent.</h3>
+                            </div>
+                          </div>
+                          <div class="col-md-5" style="box-shadow: -14.5px 0 25px 0px rgba(0,0,0,.2); padding-left: 0">
+                            <div class="close-modal-icon pointer" data-dismiss="modal" aria-label="Close">
+                              <i class="fa fa-times"></i>
+                            </div>
+                            <img ng-src="https://images.wedmegood.com/images/download-app.png" width="100%" src="https://images.wedmegood.com/images/download-app.png" />
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div id="signup-popup" class="new-signup-popup" style="display: none;">
+                  <div class="xmodal-contents">
+                    <div class="actual-xmodal">
+                      <img ng-src="https://images.wedmegood.com/images/win-pre-wed-image.jpg" src="https://images.wedmegood.com/images/win-pre-wed-image.jpg" />
+                      <div class="xmodal-text">
+                        <span class="sign-up">Sign Up &amp; stand a chance to win a FREE <br/> Pre-Wedding Shoot!</span>
+                        <button class="fb-signup-pws" ng-click="facebookLogin(); DownloadGA('Prewedding-popup', 'facebook_login', 'continue_with_facebook');">
+                          <i class="fa fa-facebook" style="color:white;padding-right:8px;"></i>Continue with Facebook</button>
+                          <span class="fb-no-post">We are not going to post anything without your permission</span>
+                          <div style="width: 80%; height: 20px; border-bottom: 1px solid #d7d7d7; text-align: center">
+                            <span style="font-size: 16px; background-color: #FFF; padding: 0 10px; color:#909090">
+                              OR
+                            </span>
+                          </div>
+                          <span class="signup-or"></span>
+                          <button class="signup-pws" ng-click="openSignup(); DownloadGA('Prewedding-popup', 'sign_up', 'create_account');">Create Account</button>
+                          <span class="already-user">Already have an Account? <span class="si" ng-click="openLogin(); DownloadGA('Prewedding-popup', 'login', 'sign_in');">Sign In</span></span>
+                          <span class="pws-tc" ng-click="goTC()">T&amp;C Apply</span>
+                        </div>
+                      </div>
+                      <button type="button" class="xmodal-close" aria-label="Close" ng-click="preWeddingModalClose(); ; DownloadGA('Prewedding-popup', 'cancel', 'cross_icon');">×</button>
+                    </div>
+                    <div class="xmodal-backdrop" ng-click="preWeddingModalClose(); ; DownloadGA('Prewedding-popup', 'cancel', 'cross_icon');"></div>
+                  </div>
+
+                  <div id="signupPromptModal" class="modal fade in">
+                    <div class="modal-dialog">
+                      <div class="modal-content">
+                        <div class="modal-body ">
+                          <button type="button" class="close close-ltn" data-dismiss="modal" aria-label="Close" style="margin-right:10px"><span aria-hidden="true">×</span></button>
+                          <form id="register_form" name="registerForm" novalidate="" class="ng-pristine ng-valid">
+                            <div class="prmptCntrDiv">
+                              <p id="signUpText">Sign Up</p>
+                              <p> Simplify and organize the wedding planning process</p>
+                              <a class="login_facebook form-control loginFacebookPrompt" onclick="fblogin()">
+                                <i class="fa fa-facebook" style="margin-right:10px;"></i>Connect with Facebook
+                              </a>
+                              <p id="signUpwEmail">--------- OR SIGN UP BY EMAIL ----------</p>
+                              <button class="create_account" id="cnaButton" onclick="showRegisterPrompt()">Create new account</button>
+                              <div id="registerPromptDiv">
+                                <p id="signupsubmitmsg"></p>
+                                <div class="signupidiv">
+                                  <input type="text" id="fos_user_registration_form_name" name="fos_user_registration_form[name]" required="required" class="form-control b-r0" data-error-message="Please enter a valid email Id" placeholder="Name" />
+                                  <p class="signupepos l-0" id="namesignuperror">*required</p>
+                                </div>
+                                <div class="signupidiv">
+                                  <input type="email" id="fos_user_registration_form_email" name="fos_user_registration_form[email]" required="required" class="form-control b-r0" data-error-message="Please enter a valid email Id" placeholder="Email" />
+                                  <p class="signupepos l-0" id="emailsignuperror">*required</p>
+                                  <p class="signupepos l-0" id="invEmailSgUp">*invalid email</p>
+                                </div>
+                                <div class="signupidiv">
+                                  <input type="password" id="fos_user_registration_form_plainPassword_first" name="fos_user_registration_form[plainPassword][first]" required="required" class="form-control b-r0" placeholder="Password" data-error-message="Password length should be atleast 2" data-validation-minlength="2" />
+                                  <p class="signupepos l-0" id="passsignuperror">*required</p>
+                                  <p class="signupepos l-0" id="passlenerror">*password length too short</p>
+                                  <p class="signupepos l-0" id="passmatcherror">*passwords do not match</p>
+                                </div>
+                                <div class="signupidiv">
+                                  <input type="password" id="fos_user_registration_form_plainPassword_second" name="fos_user_registration_form[plainPassword][second]" required="required" class="form-control b-r0" placeholder="Confirm Password" data-error-message="Please repeat the password" data-validation-minlength="2" />
+                                  <p class="signupepos l-0" id="cpasssignuperror">*required</p>
+                                </div>
+                                <button type="submit" onclick="registerUser(event); ga('send', 'event', 'user-register', 'click', 'popup', 'create-my-account');" id="signup" name="submit" class=" create_account usignup">SIGN UP</button>
+                              </div>
+                              <i data-dismiss="modal" aria-hidden="true" style="font-size:14px;cursor:pointer">Skip</i>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div id="transaction_sticky" class="hidden-xs hidden-sm extra_sticky hide">
+                    <button type="button" class="close close-ltn transaction-bride-close" aria-label="Close" style="margin-right:10px;color: #333333;font-size: 24px;opacity: 1;"><span aria-hidden="true">×</span></button>
+                    <div class="step-one">
+                      <div class="bridequiz-p">
+                        <p>Block Your Vendors at the Best Prices</p>
+                      </div>
+                      <div class="bridequiz-text">
+                        <p>Our booking feature lets you plan stress-free! Instantly price &amp; book your vendors online, enjoy multiple benefits &amp; be a Bridechilla!</p>
+                      </div>
+                      <a href="/bridechilla">
+                        <div class="take-me-there">
+                          TELL ME MORE
+                          </div></a>
+                          <div class="small-zilla-chilla">
+                            <img src="https://images.wedmegood.com/images/small-chilla.png" style="height:90px;margin-right:50px;" />
+                            <img src="https://images.wedmegood.com/images/small-zilla.png" style="height:90px" />
+                          </div>
+                        </div>
+                      </div>
+
+                      <!-- START PRIMARY MENU -->
+                      <div class="navbar hidden-xs wmg-navigation-bar new-nav" style="padding-left: 3%;
+                      padding-right: 3%;">
+                      <div id="joinAwModal" class="modal">
+                        <div class="modal-dialog ta-c">
+                          <div class="modal-content modal-size">
+                            <div class="modal-body ta-c" style="
+                            padding-bottom: 70px;
+                            position: relative;">
+                            <button type="button" class="close close-ltn f-s30" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <p style="margin-bottom: 20px;margin-top:50px;">Join an existing wedding</p>
+                            <form novalidate="" data-ng-submit="submitWedCode(navProfile.inviteCode)" class="ng-pristine ng-valid">
+                              <input type="text" style="width: 70%;
+                              font-size: 10px;
+                              padding-left: 35px;
+                              padding-top: 5px;
+                              padding-bottom: 5px;
+                              border-radius: 4px;
+                              /* outline: none; */
+                              border: 1px solid grey;text-transform:uppercase" data-ng-model="navProfile.inviteCode" placeholder="ENTER YOUR INVITE CODE" class="ng-pristine ng-untouched ng-valid ng-empty" />
+                              <p class="join-error" style="color: red;
+                              font-size: 12px;display:none;"></p>
+                              <p class="required-error" style="color: red;
+                              font-size: 12px;display:none;">*required</p>
+                              <button type="submit" class="inviteWbutton" style="    width: 100%;
+                              color: white;
+                              height:35px;
+                              letter-spacing: 1px;
+                              font-size: 14px;
+                              font-weight: 700;
+                              background-color: #E92465;
+                              border: none;
+                              position: absolute;
+                              bottom: 0px;
+                              left: 0px;
+                              border-radius: 0px 0px 5px 5px;line-height:35px;">JOIN</button>
+                            </form>
+                            <img data-ng-src="https://images.wedmegood.com/images/rolling.svg" class="invite-spin" style="position: absolute;
+                            bottom: 6px;
+                            right: 46%;
+                            height: 20px;
+                            display: none;" src="https://images.wedmegood.com/images/rolling.svg" />
+                            <span class="invite-done" style="position: absolute;
+                            bottom: 10px;
+                            display: none;
+                            letter-spacing: 1px;
+                            font-weight: 700;
+                            color: white;
+                            font-size: 14px;
+                            right: 43%;">SENT</span>
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div id="joinedModal" class="modal">
+                      <div class="modal-dialog">
+                        <div class="modal-content modal-size" style="width: 350px;">
+                          <div class="modal-body ta-c p-b0">
+                            <button type="button" class="close close-ltn f-s30" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">×</span></button>
+                            <div class="ta-c" style="padding-top: 40px;
+                            padding-bottom: 55px;">
+                            <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" x="0px" y="0px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve" style="fill: #DC205D;
+                            width: 150px;"><path d="M50,5C25.147,5,5,25.147,5,50s20.147,45,45,45s45-20.147,45-45S74.853,5,50,5z M50,91.5C27.08,91.5,8.5,72.92,8.5,50  C8.5,27.08,27.08,8.5,50,8.5S91.5,27.08,91.5,50C91.5,72.92,72.92,91.5,50,91.5z"></path><g><g><rect x="29.181" y="55.619" transform="matrix(-0.7071 -0.7071 0.7071 -0.7071 22.6988 124.1405)" width="15.757" height="3.5"></rect><circle cx="31.489" cy="51.798" r="1.75"></circle><circle cx="42.631" cy="62.94" r="1.75"></circle></g><g><path d="M69.749,38.297c-1.385,1.385-25.88,25.88-25.88,25.88l-2.475-2.475c0,0,24.511-24.511,25.88-25.88L69.749,38.297z"></path><circle cx="68.511" cy="37.06" r="1.75"></circle><circle cx="42.631" cy="62.94" r="1.75"></circle></g></g></svg>
+                            <h2 style="font-size: 30px;
+                            color: #D91F5C;
+                            font-family: proxima-nova;margin-top: 10px;">WOOHOO!</h2>
+                            <p>You have successfully joined the wedding</p>
+                            <b class="ng-binding"></b>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <script type="text/ng-template" id="LoggedInVendorNav.html">
+                  /*<![CDATA[*/
+                  <!-- <li class="nav-login hidden-md" style="position: absolute;right: 27%;">
+                    <a data-ng-href="{[vendorFeedUrl]}">
+                    <span style="font-size: 11px;" data-ng-cloak>{[ navProfile.vendorInfo.name | trncate ]}</span>
+                  </a>
+                </li> -->
+                <li class="nav-account user-nav-account nav-account-log" style="margin-top: -5px;position:static">
+                  <div>
+                    <img
+                    ng-src="{[navProfile.vendorInfo.profile_pic_thumb_status == '0' && navProfile.vendorInfo.vendor_original_pic_url || navProfile.vendorInfo.vendor_profile_pic_url | setwidth:40]}"
+                    class="nav-profile-image"
+                    ng-if="navProfile.vendorInfo.role[0] != 'ROLE_BRAND_VENDOR'"/>
+                    <img ng-src="{[navProfile.vendorInfo.vendor_profile_pic_url | setwidth:40]}" class="nav-profile-image" ng-if="navProfile.vendorInfo.role[0] == 'ROLE_BRAND_VENDOR'"/>
+                    <ul class="sub-nav">
+                      <i class="fa fa-caret-up nav-arrow"></i>
+                      <li>
+                        <a data-ng-href="{[vendorFeedUrl]}">{[ navProfile.vendorInfo.name | trncate ]}</a>
+                      </li>
+                      <li ng-if="navProfile.vendorInfo.role[0] != 'ROLE_BRAND_VENDOR'">
+                        <a data-ng-href="{[vendorSettingUrl]}">Settings</a>
+                      </li>
+                      <li>
+                        <a data-ng-click="logoutVendor()">Logout</a>
+                      </li>
+                    </ul>
+                  </div>
+                </li>
+                /*]]>*/
+              </script>
+
+              <script type="text/ng-template" id="NotLoggedNav.html">
+                <li class="nav-login nav-dynamic hide" id="nav-dApp" style="font-size: 11px; position: absolute; right: 27%">
+                  <a onclick="openModal()" class="downloadAppButton"><img ng-src="{[S3_URL]}images/download-icon.svg"/>
+                    <span ng-click="DownloadGA('Download_app','site_header','click_download_link')">Download App</span>
+                  </a>
+                </li>
+                              <li class="nav-login" style="font-size: 14px; position: absolute;right: 22%;top:4px;">
+                  <a class="usr-login-btn" onclick="openLoginModal()">
+                    Login
+                  </a>
+                </li>
+              </script>
+
+              <script type="text/ng-template" id="loggedInNav.html">
+                <!-- <li class="nav-login">
+                <a data-ng-href="{[profileFeedUrl]}">
+                <span style="font-size: 11px;" data-ng-cloak>{[ navProfile.userInfo[0].name | trncate ]}</span>
+              </a>
+            </li> -->
+            <li class="nav-account user-nav-account nav-account-log">
+                              <div data-ng-if="navProfile.role == 'user'">
+                  <img data-ng-src="{[ navProfile.profile_pic | setwidth:40 ]}" class="nav-profile-image"/>
+          <ul class="sub-nav" >
+          <div  ></div>
+          </ul>
+          </div>
+          <div data-ng-if="navProfile.role == 'admin'">
+          <div class="nav-pro-image" >
+          <i class="fa fa-user"></i>
+          </div>
+          <p class="nav-user-name">Admin</p>
+          <p class="nav-user-dot"></p>
+          <ul class="sub-nav">
+          <i class="fa fa-caret-up nav-arrow"></i>
+          <li>
+          <a style="color:#333;" href="/logout">Logout</a>
+          </li>
+          </ul>
+          </div>
+                  <!-- <div class="nav-pro-image"> <i class="fa fa-user"></i></div> -->
+          <!-- <img data-ng-src="{[navProfile.userInfo[0].profile_pic_url]}" class="nav-profile-image" /> -->
+          <!-- <p class="nav-user-dot"></p> -->
+          <!-- <ul class="sub-nav"> -->
+          <!-- <div data-ng-view></div> -->
+          <!-- </ul> -->
+              </li>
+        <li class="search-nav vendor-search-nav" style="width: 200px; margin-left: 0px;  margin-right: 0px;display:none;">
+        <div class="p-r">
+        <input type="text" name="search-value" id="search-value" class="form-control" placeholder="Search.."/>
+        <span class="nav-search-icon">
+        <i class="fa fa-search"></i>
+        </span>
+        <div id="search-results" class="hidden"></div>
+        </div>
+        </li>
+        </script>
+
+        <!-- END PRIMARY MENU -->
+        <div id="modal-search" class="modal search-bottom-sheet ng-scope open search-modal">
+        <div id="search-box">
+        <input type="text" placeholder="Search" ng-keyup="searchQuery($event)" ng-model="searchString" class="searchInput ng-pristine ng-untouched ng-valid ng-empty" />
+        <i class="fa fa-arrow-left" aria-hidden="true" ng-click="closeSearch()"></i>
+        </div>
+        <div class="modal-content" ng-click="closeSearch()">
+        <ul class="sub-search-new">
+        <!-- ngIf: searchOne.suggestion.length -->
+        <!-- ngRepeat: one in searchOne.suggestion -->
+        <!-- ngIf: searchTwo.suggestion.length -->
+        <!-- ngRepeat: two in searchTwo.suggestion -->
+        <!-- ngIf: searchThree.suggestion.length -->
+        <!-- ngRepeat: three in searchThree.suggestion -->
+        </ul>
+        <div class="no-result hide">
+        <i class="material-icons">search</i>
+        <p class="ng-binding">No results found of “”</p>
+        <p>Please check the spelling or type any other keyword to search</p>
+        </div>
+        <div class="suggested-search">
+        <!-- ngRepeat: search in popularSearch -->
+        <!-- ngRepeat: search in popularSearch -->
+        <!-- ngRepeat: search in popularSearch -->
+        </div>
+        </div>
+
+        </div>
+        </div>
+        </div>
+        </div>
+        <div class="fb-like fb_iframe_widget" data-href="https://www.facebook.com/wedmegood/likes" data-layout="box_count" data-action="like" data-show-faces="false" data-share="false" style="display: block;" fb-xfbml-state="rendered" fb-iframe-plugin-query="action=like&amp;app_id=400046146843075&amp;container_width=0&amp;href=https%3A%2F%2Fwww.facebook.com%2Fwedmegood%2Flikes&amp;layout=box_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false"><span style="vertical-align: bottom; width: 51px; height: 40px;"><iframe name="f210ec6e13fc328" width="1000px" height="1000px" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" title="fb:like Facebook Social Plugin" src="https://www.facebook.com/v2.5/plugins/like.php?action=like&amp;app_id=400046146843075&amp;channel=https%3A%2F%2Fstaticxx.facebook.com%2Fconnect%2Fxd_arbiter%2Fr%2FlY4eZXm_YWu.js%3Fversion%3D42%23cb%3Dff1c230242892%26domain%3Dwww.wedmegood.com%26origin%3Dhttps%253A%252F%252Fwww.wedmegood.com%252Ff1c3f081627%26relation%3Dparent.parent&amp;container_width=0&amp;href=https%3A%2F%2Fwww.facebook.com%2Fwedmegood%2Flikes&amp;layout=box_count&amp;locale=en_US&amp;sdk=joey&amp;share=false&amp;show_faces=false" style="border: none; visibility: visible; width: 51px; height: 40px;" class=""></iframe></span></div>
+        </div></header>
+ 
+ </div>
+ 
+</body>
+
+
+
+
   </html>
