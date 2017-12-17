@@ -23,6 +23,17 @@ public class DemoApplication {
 		return "index";
 	}
 
+	
+	@RequestMapping(value="/photos")
+	public String photos(){
+		return "photos";
+	}
+
+	
+	@RequestMapping(value="/register")
+	public String reg(){
+		return "register";
+	}
 
 }
 
